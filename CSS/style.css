@@ -1,0 +1,562 @@
+/* My Custom Stylsheet */
+
+/* Color Variables */
+:root{
+    --color-primary: #2289ff;
+    --color-Secondary: #314862!important;
+    --color-acent: #193f6a;
+    --font--poppin: "Poppins",serif;
+}
+
+/* My Custom Classes */
+.bg-primary{
+    background-color: var(--color-primary);
+}
+
+.color-primary{
+    color: var(--color-primary);
+}
+
+.bg-secondary{
+    background-color: var(--color-Secondary);
+}
+
+.color-secondary{
+    color: var(--color-Secondary);
+}
+
+.bg-acent{
+    background-color: var(--color-acent);
+}
+
+.color-acent{
+    color: var(--color-acent);
+}
+
+.btn-theme{
+    box-shadow: none;
+    margin: 0;
+    padding: 8px 20px;
+    font-family: var(--font--poppin);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    border-radius: 30px 0px 30px 30px;
+    transition: 0.5s ease;
+}
+
+.btn-theme:hover{
+    background-color: var(--color-acent);
+    color: #ffffff;
+    box-shadow: none;
+}
+
+/* header Style Here */
+header.header{
+    width: 100%;
+}
+
+.header nav.navbar{
+    box-shadow: none;
+    color: var(--color-Secondary);
+}
+
+.header nav.navbar .navbar-brand{
+    font-family: var(--font--poppin);
+    font-weight: 500;
+    color: var(--color-Secondary);
+    font-size: 20px;
+}
+
+
+.header nav.navbar .nav-item{
+    margin: auto 5px;
+}
+
+.header nav.navbar .nav-link{
+    font-family: var(--font--poppin);
+    color: var(--color-Secondary);
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: 0.5s ease;
+}
+
+.header nav.navbar .nav-link:hover{
+    color: var(--color-primary);
+}
+
+.header nav.navbar .nav-link.active{
+    color: var(--color-primary);
+}
+
+
+
+/* Start Section Banner */
+
+/* Button */
+.btn-theme-2{
+    margin: 0;
+    padding: 10px 30px;
+    font-family: var(--font--poppin);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    border-radius: 30px;
+    transition: 0.5s ease;
+}
+
+.btn-play{
+    margin: 0;
+    padding: 10px 19px;
+    font-family: var(--font--poppin);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: var(--color-Secondary);
+    color: #ffffff;
+    border-radius: 100%;
+    transition: 0.5s ease;
+}
+
+.btn-theme-2:hover{
+    background-color: var(--color-acent);
+    color: #ffffff;
+}
+
+.btn-play:hover{
+    background-color: var(--color-primary);
+    color: #ffffff;
+}
+
+
+/* Banner */
+#Hero-banner{
+    padding: 80px 0;
+    width: 100%;
+    font-family: var(--font--poppin);
+    color: var(--color-Secondary);
+}
+
+#Hero-banner p{
+    font-weight: 400;
+}
+
+#Hero-banner .image{
+    border-radius: 80px 30px 0px 80px ;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+/* End Section Banner */
+
+
+/* Start Search Section */
+#search-section{
+    margin:50px 0 100px 0 ;
+}
+
+#search-section .search-area{
+    border-radius: 80px;
+    padding: 20px 50px;
+    font-family: var(--font--poppin);
+}
+
+#search-section .search-area select{
+    border: none;
+    padding: 5px;
+    outline: none;
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+#search-section .search-area input{
+    border: 1px solid #ffffff;
+    outline: none;
+}
+
+#search-section .search-area input:focus{
+    outline:none;
+    box-shadow: none;
+    border: 1px solid var(--color-Secondary);
+}
+
+#search-section .search-area button.btn-theme{
+    border-radius: 30px;
+    padding: 10px 30px;
+    transition: 0.5s ease;
+}
+
+#search-section .search-area button.btn-theme:hover{
+    /* transform: scale(1.1); */
+    transform:translateY(-5px)
+
+}
+/* End Search Section */
+
+
+/* Start About Section */
+#about-section{
+    width: 100%;
+    background-color: #f0eeee;
+    padding: 100px 0;
+    font-family: var(--font--poppin);
+}
+
+#about-section h1{
+    color: var(--color-Secondary);
+}
+
+#about-section h6{
+    font-size: 30px;
+    font-weight: 500;
+    border-left: 5px solid var(--color-primary);
+    padding-left: 20px;
+}
+
+#about-section .image{
+    border-radius: 80px 0px 80px 80px;
+    overflow: hidden;
+    margin-bottom:20px ;
+}
+
+#about-section .image img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* End About Section */
+
+
+/* Start Services Section */
+.services-section{
+    padding: 40px 0;
+    font-family: var(--font--poppin);
+}
+
+.services-section h3{
+    color: var(--color-Secondary);
+}
+
+.services-section .service-show{
+    padding:20px 30px;
+    text-align: center;
+    border-radius: 0px 30px 0px 30px;
+    margin: 15px;
+}
+
+.services-section .service-show i.fas{
+    padding:20px;
+    width: 60px;
+    color: var(--color-primary);
+    font-size: 20px;
+    background-color: #eeeeee;
+    border-radius: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.services-section .service-show p{
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+/* End Services Section */
+
+
+/* Start Property Section */
+#property-section{
+    width: 100%;
+    padding: 50px 0;
+    background-color: #f0eeee;
+    font-family: var(--font--poppin);
+    color: var(--color-Secondary);
+}
+
+#property-section .text-right a{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-Secondary);
+    transition: 1s ease;
+}
+
+#property-section .text-right a:hover{
+    color: var(--color-primary);
+}
+
+/* Property Sider */
+#property-section #property-slider{
+width: 100%;
+height: 400px;
+margin-top: 50px;
+}
+
+#property-slider .swiper-container{
+    width: 100%;
+    height: 100%;
+}
+
+#property-slider .swiper-container .swiper-slide .property-list{
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 0px 30px 0px 30px;
+    color: black;
+}
+
+#property-slider .swiper-container .swiper-slide .property-list p{
+    font-weight: 500;
+}
+
+
+#property-slider .swiper-container .swiper-slide .property-list .image{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0px 30px 0px 30px;
+    margin-bottom: 10px;
+}
+
+#property-slider .swiper-container .swiper-slide .property-list .image img{
+    width: 100%;
+    object-fit: cover;
+}
+/* End Property Section */
+
+
+/* Start work section */
+.work-section{
+    width: 100%;
+    padding: 100px 0 0 0;
+    background-color: #ffffff;
+    text-align: center;
+    font-family: var(--font--poppin);
+    color: var(--color-Secondary);
+}
+
+
+.work-section p{
+    font-weight: 400;
+}
+
+.work-section .service-show{
+    padding:20px 30px;
+    text-align: center;
+    border-radius: 0px 30px 0px 30px;
+    margin: 15px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.work-section .service-show i.fas{
+    padding:20px;
+    width: 60px;
+    color: var(--color-primary);
+    font-size: 20px;
+    background-color: #eeeeee;
+    border-radius: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.work-section .service-show p{
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.work-section .service-show:hover{
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    background-color: #ffffff;
+}
+/* End work section */
+
+/* start Feature Section */
+.Feature-Section{
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+    font-family: var(--font--poppin);
+    color: var(--color-Secondary);
+}
+
+
+.Feature-Section  .property-list{
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 0px 30px 0px 30px;
+    color: black;
+}
+
+.Feature-Section .property-list p{
+    font-weight: 500;
+}
+
+
+.Feature-Section .property-list .image{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0px 30px 0px 30px;
+    margin-bottom: 10px;
+}
+
+.Feature-Section .property-list .image img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.Feature-Section .btn{
+    border-radius: 0px 10px 0px 10px;
+}
+/* End Feature Section */
+
+/* Start testemonial section */
+.testemonial-section{
+    width: 100%;
+    padding: 0 0 100px 0;
+    text-align: center;
+    font-family: var(--font--poppin);
+}
+
+.testemonial-section .testemonial-list .image{
+    border-radius: 100% 100% 0 100%;
+    overflow: hidden;
+    height: 330px;
+    border: 5px solid rgb(245, 244, 242);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);  
+}
+
+.testemonial-section .testemonial-list .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testemonial-section .testemonial-list i.fas{
+    color: var(--color-primary);
+    opacity: 0.2;
+}
+/* End testemonial section */
+
+/* Start Mail Section */
+.mail-section{
+    width: 100%;
+    padding: 0 0 100px 0;
+    text-align: center;
+    font-family: var(--font--poppin);
+}
+
+.mail-section .form{
+    border-radius: 30px;
+    padding: 20px 40px;
+}
+
+.mail-section .form input{
+    border-radius: 30px;
+    padding: 5px 20px;
+}
+
+.mail-section .form .btn-theme{
+    border-radius: 30px;
+    padding: 5px 20px;
+}
+/* End Mail Section */
+
+
+/* Start Footer */
+footer{
+    width: 100%;
+    padding: 50px 0;
+    background-color: var(--color-primary);
+    font-family: var(--font--poppin);
+    color: #ffffff;
+    border-radius: 50px 50px 0 0;
+}
+
+footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li a{
+    color: #ffffff;
+    font-size: 13px;
+    transition: 0.5s ease;
+}
+
+footer ul li a:hover{
+    color: #ffffff;
+    opacity: 0.7;
+}
+/* End Footer */
+
+
+
+
+/* Media Query Here */
+@media only screen and (max-width:991px){
+    .testemonial-section .testemonial-list .image{
+        border-radius: 100% 100% 100% 100%;
+        height: 200px;
+        border: 5px solid rgb(245, 244, 242);  
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);  
+    }
+}
+
+@media only screen and (max-width:580px){  
+    
+    /* Search section*/
+    #search-section .search-area{
+        border-radius: 0;
+        font-family: var(--font--poppin);
+        padding: 30px;
+    }
+    
+    #search-section .search-area input{
+        margin-bottom: 10px;
+    }
+
+    #search-section .search-area button.btn-theme{
+        margin-top: 20px;
+        width: 100%;
+    }
+
+        /* Service section*/
+    .services-section .d-flex{
+        flex-direction: column;
+    }
+
+        /* Work sectino*/
+    .work-section .d-flex{
+        flex-direction: column;
+    }
+
+    /* Testemonial section  */
+    .testemonial-section .testemonial-list{
+        cursor: pointer;
+    } 
+    .testemonial-section .testemonial-list .image{
+        border-radius: 100% 100% 100% 100%;
+        height: 110px;
+        border: 5px solid rgb(245, 244, 242);  
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);  
+    }
+
+    /* mail section */
+    .mail-section .form{
+        padding: 30px 20px;
+    }
+
+    .mail-section .btn-theme{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Footer Here */
+    footer h4{
+        text-align: center;
+    }
+}
